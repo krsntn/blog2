@@ -1,17 +1,17 @@
 module.exports = {
-  pathPrefix: "/leonids",
+  pathPrefix: '/leonids',
   siteMetadata: {
-    title: `Leonids`,
+    title: `Krsn's Lazy Dev Blog`,
     author: {
-      name: `@ry_zou`,
+      name: `krsntn`,
       summary: `web dev`,
     },
     description: `A simple, fixed sidebar two columns Gatsby.js blog starter.`,
-    siteUrl: `https://renyuanz.github.io/leonids`,
+    siteUrl: `https://blog.krsn.xyz`,
     social: {
-      twitter: `ry_zou`,
+      twitter: `ooneoneo`,
     },
-    defaultImage: "images/bg.jpeg",
+    defaultImage: 'images/bg.jpeg',
   },
   plugins: [
     {
@@ -50,8 +50,9 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -81,7 +82,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
-    "gatsby-plugin-dark-mode",
+    'gatsby-plugin-dark-mode',
     `gatsby-plugin-postcss`,
   ],
-}
+};
